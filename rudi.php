@@ -1,7 +1,7 @@
 <?php
 
 require 'vendor/autoload.php';
-require 'database.php';
+require 'config/database.php';
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Rudi\Model\Soldier as Soldier;

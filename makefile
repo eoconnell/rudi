@@ -3,13 +3,13 @@ default:
 db-reset: db-delete db-create db-init
 
 db-create:
-	touch database.sqlite
+	touch db/database.sqlite
 
 db-delete:
-	rm -f database.sqlite
+	rm -f db/database.sqlite
 
 db-init:
-	php create_schema.php
+	php db/create_schema.php
 
 db-seed:
-	php seed.php
+	php db/seed.php
