@@ -1,0 +1,20 @@
+{
+    "name": "eoconnell/rudi",
+    "description": "Realism Unit Data Interface",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Evan O'Connell",
+            "email": "oconn.e@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Rudi": "lib/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/database": "4.0.*"
+    }
+}
