@@ -1,7 +1,8 @@
 <?php
 
-require 'vendor/autoload.php';
-require 'config/database.php';
+namespace RudiExample;
+
+include __DIR__.'/vendor/autoload.php';
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Rudi\Model\Soldier as Soldier;

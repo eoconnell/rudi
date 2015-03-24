@@ -1,0 +1,14 @@
+{
+  "require": {
+    "illuminate/database": "4.0.x"
+  },
+  "autoload": {
+    "psr-4": {
+      "Rudi\\": "../src/",
+      "RudiExample\\": "."
+    },
+    "files": [
+      "config/db.php"
+    ]
+  }
+}

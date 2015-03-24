@@ -1,18 +1,19 @@
 <?php
 
+namespace RudiExample\Config;
+
 use Illuminate\Database\Capsule\Manager as Capsule;
-use Illuminate\Events\Dispatcher;
-use Illuminate\Container\Container;
+
+include __DIR__.'/../vendor/autoload.php';
 
 $capsule = new Capsule;
 
 $capsule->addConnection([
     'driver' => 'sqlite',
-    'database' => __DIR__.'/../db/database.sqlite',
+    'database' => __DIR__.'/../database.sqlite',
     'prefix' => ''
 ]);
 
-$capsule->setEventDispatcher(new Dispatcher(new Container));
 $capsule->setAsGlobal();
 
 $capsule->bootEloquent();

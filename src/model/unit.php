@@ -1,4 +1,6 @@
-<?php namespace Rudi\Model;
+<?php 
+
+namespace Rudi\Model;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
