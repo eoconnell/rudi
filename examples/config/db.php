@@ -11,7 +11,7 @@ $capsule = new Capsule;
 $capsule->addConnection([
     'driver' => 'sqlite',
     'database' => __DIR__.'/../database.sqlite',
-    'prefix' => ''
+    'prefix' => 'rudi_'
 ]);
 
 $capsule->setAsGlobal();
